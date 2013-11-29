@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <TableLayout
+            android:id="@+id/adventure_layout_buttons"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:stretchColumns="*">
+
+        <TableRow>
+
+            <Button
+                    android:text="Inventory"
+                    android:layout_marginRight="5dp"
+                    android:onClick="OnInventoryButtonClick"/>
+
+            <Button android:visibility="invisible"/>
+
+            <Button
+                    android:text="W"
+                    android:onClick="OnForwardButtonClick"/>
+
+            <Button android:visibility="invisible"/>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                    android:text="Stats"
+                    android:layout_marginRight="5dp"
+                    android:onClick="OnStatsButtonClick"/>
+
+            <Button
+                    android:text="A"
+                    android:onClick="OnMoveLeftButtonClick"/>
+
+            <Button
+                    android:text="S"
+                    android:onClick="OnBackButtonClick"/>
+
+            <Button
+                    android:text="D"
+                    android:onClick="OnMoveRightButtonClick"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <RelativeLayout
+            android:id="@+id/adventure_layout_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:visibility="gone">
+
+        <TextView
+                android:id="@+id/adventure_text_hp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="HP: 100"
+                android:layout_marginRight="10dp"/>
+
+        <TextView
+                android:id="@+id/adventure_text_mana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/adventure_text_hp"
+                android:text="Mana: 100"
+                android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/adventure_text_display"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lines="15"
+            android:layout_above="@id/adventure_layout_buttons"
+            android:layout_below="@id/adventure_layout_status"
+            android:text="123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+            android:gravity="center"
+            android:typeface="monospace"/>
+</RelativeLayout>
+

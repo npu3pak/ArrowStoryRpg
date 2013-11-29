@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <Button
+            android:id="@+id/inventory_button_click"
+            android:layout_alignParentBottom="true"
+            android:onClick="onCloseButtonClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Close"/>
+
+    <TableLayout
+            android:layout_above="@id/inventory_button_click"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:stretchColumns="*">
+
+        <TableRow>
+
+            <TextView
+                    android:gravity="center"
+                    android:text="Gold"/>
+
+            <TextView
+                    android:gravity="center"
+                    android:id="@+id/inventory_text_gold"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                    android:gravity="center"
+                    android:text="Armor Class"/>
+
+            <TextView
+                    android:gravity="center"
+                    android:id="@+id/inventory_text_armor_class"/>
+
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="20dp">
+
+            <TextView
+                    android:gravity="center"
+                    android:text="Damage"/>
+
+            <TextView
+                    android:gravity="center"
+                    android:id="@+id/inventory_text_damage"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                    android:gravity="center"
+                    android:id="@+id/inventory_text_weapon"/>
+
+            <Button
+                    android:text="Change weapon"
+                    android:onClick="onChangeWeaponButtonClick"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                    android:gravity="center"
+                    android:id="@+id/inventory_text_armor"/>
+
+            <Button
+                    android:text="Change armor"
+                    android:onClick="onChangeArmorButtonClick"/>
+
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

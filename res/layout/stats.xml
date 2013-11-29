@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <Button
+            android:id="@+id/stats_button_click"
+            android:layout_alignParentBottom="true"
+            android:onClick="onCloseButtonClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Close"/>
+
+    <TableLayout
+            android:layout_above="@id/stats_button_click"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:stretchColumns="*">
+
+        <TableRow>
+
+            <TextView
+                    android:gravity="center"
+                    android:text="Level"/>
+
+            <TextView
+                    android:gravity="center"
+                    android:id="@+id/stats_text_level"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                    android:gravity="center"
+                    android:text="EXP"/>
+
+            <TextView
+                    android:gravity="center"
+                    android:id="@+id/stats_text_exp"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                    android:gravity="center"
+                    android:text="EXP for Level Up"/>
+
+            <TextView
+                    android:gravity="center"
+                    android:id="@+id/stats_text_exp_for_level"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                    android:gravity="center"
+                    android:text="HP"/>
+
+            <TextView
+                    android:gravity="center"
+                    android:id="@+id/stats_text_hp"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                    android:gravity="center"
+                    android:text="Mana"/>
+
+            <TextView
+                    android:gravity="center"
+                    android:id="@+id/stats_text_mana"/>
+
+        </TableRow>
+
+
+    </TableLayout>
+</RelativeLayout>

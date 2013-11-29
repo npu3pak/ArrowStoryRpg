@@ -1,0 +1,30 @@
+[
+    {
+        "level": 1,
+        "name": "Хворостина",
+        "minDamage": 12,
+        "maxDamage": 15,
+        "price": 20
+    },
+    {
+        "level": 1,
+        "name": "Деревянный дрын",
+        "minDamage": 14,
+        "maxDamage": 20,
+        "price": 30
+    },
+    {
+        "level": 1,
+        "name": "Ссаная тряпка",
+        "minDamage": 3,
+        "maxDamage": 8,
+        "price": 10
+    },
+    {
+        "level": 1,
+        "name": "Поганый веник",
+        "minDamage": 12,
+        "maxDamage": 19,
+        "price": 25
+    }
+]

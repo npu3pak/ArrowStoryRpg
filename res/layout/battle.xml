@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <TableLayout
+            android:id="@+id/battle_layout_controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:stretchColumns="*">
+
+        <TableRow>
+
+            <TextView
+                    android:gravity="center"
+                    android:id="@+id/battle_text_player_hp"
+                    android:text="200HP"/>
+
+            <TextView
+                    android:gravity="center"
+                    android:id="@+id/battle_text_player_mana"
+                    android:text="200MP"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                    android:text="Attack"
+                    android:onClick="onAttackButtonClick"/>
+
+            <Button
+                    android:text="Skills"
+                    android:onClick="onSkillsButtonClick"/>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                    android:text="Flee"
+                    android:onClick="onFleeButtonClick"/>
+
+            <Button
+                    android:text="Items"
+                    android:onClick="onItemsButtonClick"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/battle_text_monster_picture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="10"
+            android:text=""
+            android:gravity="center"/>
+
+    <TextView
+            android:id="@+id/battle_text_monster_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:text="74HP"/>
+
+
+</RelativeLayout>

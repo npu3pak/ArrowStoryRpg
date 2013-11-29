@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "name": "Strange Stranger",
+        "npcPhrases": [
+            { "id": 1, "text": "Hello. What can I do for you?" },
+            { "id": 2, "text": "Ok. Bye!" },
+            { "id": 3, "text": "I have no name. Ok? Just call me stranger." },
+            { "id": 4, "text": "Fuck you too!" }
+        ],
+        "playerPhrases": [
+            {"id": 1, "text": "Fuck you!"},
+            {"id": 2, "text": "Hello! What is your name?"},
+            {"id": 3, "text": "Bye! Stranger..."}
+        ],
+        "playerAnswers": [
+            {"phrase": 1, "answers": [{"id": 1}, {"id": 2}]},
+            {"phrase": 2, "answers": []},
+            {"phrase": 3, "answers": [{"id": 1}, {"id": 3}]},
+            {"phrase": 4, "answers": []}
+        ],
+        "npcAnswers": [
+            {"phrase": 1, "answers": [{"id": 4}]},
+            {"phrase": 2, "answers": [{"id": 3}]},
+            {"phrase": 3, "answers": [{"id": 2}]}
+        ]
+    }
+]
